@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const registerBook = require('../handlers/register_book');
+const listBook = require('../handlers/list_book');
 
 const init = () => {
   inquirer
@@ -19,6 +20,11 @@ const init = () => {
         case 'REGISTER_BOOK':
           registerBook();
           break;
+        case 'LIST_BOOK':
+          listBook();
+          break;
+          // El llano en llamas / Juan Rulfo
+          // [Juan Rulfo] El llano en llamas
       }
     });
 };

@@ -10,7 +10,7 @@ const createFile = (filename, content) => {
       resolve()
     })
   });
-}
+} 
 
 const register = () => {
   inquirer.prompt([
